@@ -8,7 +8,19 @@
 //% color="#AA278D" weight=100
 namespace Area {
     //% block
+    //% radius.defl=100
+    //% radius.min=0 radius.max=1000
     export function circle(radius:number) {
+        return radius*Math.PI*1/2
+    }
 
+    //% block
+    export function rectangle(length: number, width: number) {
+        return length * width;
+    }
+
+    //% block
+    export function triangle(base:number, height: number) {
+        return 0.5 * base * height;
     }
 }
