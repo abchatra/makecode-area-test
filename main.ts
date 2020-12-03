@@ -4,14 +4,13 @@
  * is "block", and it specifies that a block should be
  * generated for an **exported** function.
  */
-
 //% color="#AA278D" weight=100
 namespace Area {
     //% block "circle radius %radius"
     //% radius.defl=100
     //% radius.min=0 radius.max=1000
     export function circle(radius:number) {
-        return radius*Math.PI*1/2
+        return radius*radius*Math.PI;
     }
 
     //% block "triangle length %length width %width"
